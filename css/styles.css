@@ -28,6 +28,13 @@ p {
 img {
   display: block;
 }
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 /* шапка сторінки */
 .header .container-nav {
   display: flex;
@@ -187,6 +194,7 @@ img {
 .section {
   display: flex;
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 .solutions {
   display: flex;
@@ -196,6 +204,8 @@ img {
   margin-top: 10px;
   height: 70px;
   width: 270px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 /* чим ми займаємось */
 .primary {
@@ -205,7 +215,7 @@ img {
   margin-right: 0 auto;
 }
 .work-section {
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 .work-list {
   display: flex;
@@ -217,7 +227,6 @@ img {
 /* наша команда */
 .team {
   display: flex;
-  margin-bottom: 94px;
   margin-top: 50px;
   font-size: 16px;
   line-height: 1.18;
@@ -314,7 +323,6 @@ img {
   border: 1px solid #afb1b8;
   width: 170px;
   height: 92px;
-  margin-bottom: 94px;
 }
 .clients-item:hover,
 .clients-item:focus {
@@ -344,6 +352,7 @@ img {
 }
 .footer-list {
   padding-bottom: 60px;
+  font-style: normal;
 }
 .footer-item {
   color: var(--primary-bg-color);
@@ -431,11 +440,9 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border: transparent;
 }
-
 .filters {
   display: flex;
-  padding-top: 94px;
-  padding-left: 295px;
+  justify-content: center;
 }
 .btn-all {
   min-width: 73px;
@@ -462,28 +469,44 @@ img {
   margin-left: 8px;
 }
 /* вибір контенту */
-.content-flex {
-  margin-top: 50px;
-}
 .flex-section {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+  margin-top: 50px;
 }
 .first-section {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 94px;
-  width: calc((100% - 60px) / 3);
-
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.first-section > a {
+  text-decoration: none;
 }
 .first-section:nth-child(3n) {
   margin-right: 0;
 }
+.first-section-container {
+  border: 1px solid #eeeeee;
+}
 .first-section-title {
-  margin: 20px 24px 0px 24px;
+  color: var(--pimary-text-color);
+
+  padding: 20px 24px 4px 24px;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 .first-conten {
-  margin: 20px 24px 20px 24px;
+  color: var(--title-text-color);
+
+  padding: 0 24px 20px 24px;
+  letter-spacing: 0.03em;
+  font-size: 16px;
+  line-height: 1.9;
+}
+.item-hover:hover,
+.item-hover:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
