@@ -373,9 +373,18 @@ img {
 }
 .social-join {
   color: var(--primary-bg-color);
-  margin-bottom: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  /* font-size: 14px; */
+  line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  /* line-height: calc(16 / 14);
+  margin-bottom: 20px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase; */
 }
 .social-item {
   display: flex;
@@ -457,6 +466,9 @@ img {
   margin-left: 8px;
 }
 /* вибір контенту */
+.first-section:nth-child(-n + 6) {
+  margin-bottom: 30px;
+}
 .flex-section {
   display: flex;
   justify-content: center;
